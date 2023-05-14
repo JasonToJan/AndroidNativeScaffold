@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Frame" />
+            <option value="$PROJECT_DIR$/Frame/LibFlycoTabLayout" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bizModule" />
+            <option value="$PROJECT_DIR$/bizModule/catModule" />
+            <option value="$PROJECT_DIR$/bizModule/detailModule" />
+            <option value="$PROJECT_DIR$/bizModule/homeModule" />
+            <option value="$PROJECT_DIR$/bizModule/homeModule-api" />
+            <option value="$PROJECT_DIR$/bizModule/mainModule" />
+            <option value="$PROJECT_DIR$/commonAppLib" />
+            <option value="$PROJECT_DIR$/commonBaseLib" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

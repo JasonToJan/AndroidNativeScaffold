@@ -1,0 +1,29 @@
+package com.jason.mvvm.base.dialog
+
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
+
+/**
+ * @author Jason
+ * @description->使用Databing的Dialog基类
+ */
+abstract class BaseDBDialog<DB : ViewDataBinding> : BaseDialog() {
+
+    lateinit var mBinding: DB
+
+    override fun generateView(inflater: LayoutInflater, container: ViewGroup?) {
+        mBinding = DataBindingUtil.inflate(inflater, getLayoutId(), container, false)
+        mRootView = mBinding.root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        //判断延迟属性是否初始化了
+        if (::mBinding.isInitialized) {
+            mBinding.unbind()
+        }
+    }
+
+}
